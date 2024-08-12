@@ -1,4 +1,7 @@
-While reading book "C Programming Language", 3nd Edition
+# c_projects repo
+-
+## reason
+> While reading book "C Programming Language", 3nd Edition
 by Brian W. Kernighan (Author), Dennis M. Ritchie (Author) 
 i need to solve code tasks and this repo for saving this code.
 -
