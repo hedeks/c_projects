@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <string.h>
 
 #define MAXLINE 1000
 
 int getline_custom(char line[], int limit);
 void copy(char to[], char from[]);
 
-int main(){
+int char_arrays_main(){
     int len;
     int max;
     char line[MAXLINE];

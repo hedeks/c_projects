@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+#define MAXLINE 100
+
+int get_line(char line[], int limit);
+void print_line(char line[], int len);
+
+int main (){
+    char current_line[MAXLINE];
+    int len; 
+    while ((len = get_line(current_line, MAXLINE)) > 0){
+        if (len > 80){
+            print_line(current_line, len);
+        }
+    }
+    return 0;
+}
+
+
+int get_line(char s[], int limit){
+    int c, i;
+    for (i = 0; i < limit - 1 && (c = getchar()) != EOF && c != '\n'; ++i){
+        s[i] = c;
+    }
+
+    if (c == '\n'){
+        s[i] = c;
+        ++i;
+    }
+
+    s[i] = '\0';
+    return i;
+}
+
+void print_line(char line[], int len){
+    int i = 0;
+    for (i = 0; i < len - 1; ++i){
+        putchar(line[i]);
+    }
+    putchar('\n');
+}
