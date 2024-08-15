@@ -5,7 +5,7 @@
 int get_line(char line[], int limit);
 void print_line(char line[], int len);
 
-int main (){
+int one_point_seventeen_main (){
     char current_line[MAXLINE];
     int len; 
     while ((len = get_line(current_line, MAXLINE)) > 0){
