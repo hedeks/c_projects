@@ -28,7 +28,7 @@ int main(){
 int get_line(char line[]){
    int c, i;
 
-   for (i = 1; (c = getchar()) != EOF && c != '\n'; i++){
+   for (i = 0; (c = getchar()) != EOF && c != '\n'; i++){
       line[i] = c;   
    }
 
@@ -61,7 +61,7 @@ void print_line(char line[], int length){
             }
             int step;
             if (curr_pos < TABSTOP){
-                step = TABSTOP - i;
+                step = TABSTOP - curr_pos;
                 print_blanks(step); 
                 curr_pos += step;
             } else {
